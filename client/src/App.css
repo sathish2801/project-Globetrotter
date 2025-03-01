@@ -30,8 +30,8 @@
 }
 
 .image-collage img {
-  width: 100%; /* Full width of the grid cell */
-  height: 100%; /* Full height of the grid cell */
+  width: 70%; /* Full width of the grid cell */
+  height: 70%; /* Full height of the grid cell */
   object-fit: cover; /* Fill the container without distortion */
   border: 2px solid #ffcc00; /* Gold border */
   display: block; /* Remove inline-block whitespace */
@@ -154,7 +154,7 @@
   }
 
   .left-half {
-    height: 40vh; /* Reduce height for smaller screens */
+    height: 30vh; /* Reduce height for smaller screens */
   }
 
   .right-half {
@@ -183,7 +183,7 @@
 
 @media (max-width: 768px) {
   .left-half {
-    height: 30vh; /* Further reduce height for mobile devices */
+    height: 25vh; /* Further reduce height for mobile devices */
   }
 
   .right-half {
@@ -207,7 +207,7 @@
 
 @media (max-width: 480px) {
   .left-half {
-    height: 25vh; /* Smallest height for very small screens */
+    height: 20vh; /* Smallest height for very small screens */
   }
 
   .right-half {
