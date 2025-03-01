@@ -18,7 +18,7 @@ const Game = () => {
   useEffect(() => {
     const fetchAllDestinations = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/destinations'); // New endpoint to fetch all destinations
+        const response = await axios.get('https://project-globetrotter-server.vercel.app/'); // New endpoint to fetch all destinations
         if (response.data.error) {
           throw new Error(response.data.error);
         }
