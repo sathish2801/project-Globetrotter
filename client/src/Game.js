@@ -14,7 +14,7 @@ const Game = () => {
 
   const fetchDestination = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/destination');
+      const response = await axios.get('https://project-globetrotter.onrender.com/api/destination');
       if (response.data.error) {
         throw new Error(response.data.error);
       }
