@@ -106,6 +106,7 @@
   gap: 10px;
   margin-top: 20px; /* Add spacing above the score */
 }
+
 /* Challenge Button Styles */
 .challenge-wrapper {
   display: flex;
@@ -144,4 +145,87 @@
   font-size: 1.2rem;
   color: #ffcc00;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .app {
+    flex-direction: column; /* Stack left and right halves vertically */
+  }
+
+  .left-half {
+    height: 40vh; /* Reduce height for smaller screens */
+  }
+
+  .right-half {
+    height: auto; /* Allow the right half to grow as needed */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .header h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+  }
+
+  .start-screen {
+    max-width: 100%; /* Allow the start screen to take full width */
+  }
+
+  .name-input,
+  .start-button,
+  .challenge-button {
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
+
+  .previous-score {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .left-half {
+    height: 30vh; /* Further reduce height for mobile devices */
+  }
+
+  .right-half {
+    padding: 15px; /* Further reduce padding for mobile devices */
+  }
+
+  .header h1 {
+    font-size: 1.8rem; /* Further reduce font size for mobile devices */
+  }
+
+  .name-input,
+  .start-button,
+  .challenge-button {
+    padding: 8px 16px; /* Reduce padding for mobile devices */
+  }
+
+  .previous-score {
+    font-size: 0.9rem; /* Further reduce font size for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .left-half {
+    height: 25vh; /* Smallest height for very small screens */
+  }
+
+  .right-half {
+    padding: 10px; /* Smallest padding for very small screens */
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Smallest font size for very small screens */
+  }
+
+  .name-input,
+  .start-button,
+  .challenge-button {
+    font-size: 0.8rem; /* Smallest font size for very small screens */
+    padding: 6px 12px; /* Smallest padding for very small screens */
+  }
+
+  .previous-score {
+    font-size: 0.8rem; /* Smallest font size for very small screens */
+  }
 }
