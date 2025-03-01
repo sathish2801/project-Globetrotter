@@ -30,8 +30,7 @@ function App() {
           <img src="https://img.freepik.com/free-photo/tall-sky-district-tokyo-light_1203-4589.jpg?t=st=1740821704~exp=1740825304~hmac=5bbf606b2c7f5c90d8a8ad92f32f7d88fbd5c09b1aba52a80c9193c0e927f040&w=740" alt="Tokyo" />
           <img src="https://img.freepik.com/free-photo/woman-front-empire-state-building_23-2150897463.jpg?t=st=1740821808~exp=1740825408~hmac=a0583235a9b2079e491373affbe1da9e6a9c4704f700c656425b23a7eccb7956&w=740" alt="New York" />
           <img src="https://img.freepik.com/free-photo/front-view-woman-posing-amusement-park_23-2148693073.jpg?t=st=1740821866~exp=1740825466~hmac=cecb95bb3a2a314b3516b45d4b9dab4627a0d5c7806699281140390c97338a42&w=740" alt="London" />
-          <img src="https://img.freepik.com/free-photo/portrait-woman-visiting-luxurious-city-dubai_23-2151328494.jpg?t=st=1740821957~exp=1740825557~hmac=e0ff49f574f345df82fd607f22e2c0f294f810e77a8a25c58493302ffce6920c&w=740" alt="Dubai" />
-          <img src="https://img.freepik.com/premium-photo/beautiful-girl-walks-by-famous-sydney-opera-house-sunrise_926199-4250354.jpg?w=740" alt="Sydney" />
+          
         </div>
       </div>
 
