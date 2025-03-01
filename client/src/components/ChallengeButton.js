@@ -26,7 +26,7 @@ const ChallengeButton = () => {
       });
 
       console.log('Challenge Response:', response.data); // Log the response
-      const link = `http://localhost:3000/challenge/${response.data.challengeId}`;
+      const link = `https://project-globetrotter.vercel.app/challenge/${response.data.challengeId}`;
       setChallengeLink(link);
 
       // Open WhatsApp share dialog
