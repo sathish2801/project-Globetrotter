@@ -51,7 +51,7 @@ const Game = () => {
   };
 
   const shareChallenge = () => {
-    const shareText = `Can you beat my score of ${score.correct} in Globetrotter? 🌍🚀\nPlay now: http://localhost:3000`;
+    const shareText = `Can you beat my score of ${score.correct} in Globetrotter? 🌍🚀\nPlay now: https://project-globetrotter.vercel.app/`;
     const shareUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
 
     window.open(shareUrl, '_blank');
