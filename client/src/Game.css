@@ -1,0 +1,189 @@
+/* Game.css */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Score Display */
+.score-display {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Clues Section */
+.clues {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #ffcc00;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* Options Section */
+.options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center; /* Center buttons */
+}
+
+.option-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #1a1a1a;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.option-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.option-button.correct {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+.option-button.wrong {
+  background: linear-gradient(135deg, #f44336, #c62828);
+}
+
+/* Feedback Section */
+.feedback {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #ffcc00;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.feedback.happy {
+  border-color: #4caf50;
+}
+
+.feedback.sad {
+  border-color: #f44336;
+}
+
+/* Next Button */
+.next-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #1a1a1a;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.next-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Image Container */
+.image-container {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.image-container img {
+  border-radius: 10px;
+  border: 2px solid #ffcc00;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.image-container p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Motivational Text */
+.motivational-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.motivational-text p {
+  margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Travel-Themed Background */
+.game-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Subtle texture */
+  opacity: 0.1;
+  pointer-events: none; /* Ensure it doesn't block interactions */
+}
+/* Challenge Friend Button */
+.challenge-friend-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.challenge-friend-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #1a1a1a;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.challenge-friend-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
