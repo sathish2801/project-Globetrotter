@@ -21,7 +21,7 @@ const ChallengeButton = () => {
   const createChallenge = async () => {
     try {
       console.log('Sending Score:', previousScore.correct); // Log the score being sent
-      const response = await axios.post('https://project-globetrotter.onrender.com/api/challenge', {
+      const response = await axios.post('http://localhost:5000/api/challenge', {
         score: previousScore.correct
       });
 
