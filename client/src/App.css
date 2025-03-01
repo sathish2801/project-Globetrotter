@@ -21,7 +21,7 @@
 .image-collage {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows (4 images total) */
   gap: 0; /* No gap between images */
   width: 100%;
   height: 100%;
@@ -30,8 +30,8 @@
 }
 
 .image-collage img {
-  width: 70%; /* Full width of the grid cell */
-  height: 70%; /* Full height of the grid cell */
+  width: 100%; /* Full width of the grid cell */
+  height: 100%; /* Full height of the grid cell */
   object-fit: cover; /* Fill the container without distortion */
   border: 2px solid #ffcc00; /* Gold border */
   display: block; /* Remove inline-block whitespace */
@@ -154,10 +154,12 @@
   }
 
   .left-half {
-    height: 30vh; /* Reduce height for smaller screens */
+    order: 2; /* Move left half to the bottom on mobile */
+    height: 40vh; /* Reduce height for smaller screens */
   }
 
   .right-half {
+    order: 1; /* Move right half to the top on mobile */
     height: auto; /* Allow the right half to grow as needed */
     padding: 20px; /* Reduce padding for smaller screens */
   }
@@ -183,7 +185,7 @@
 
 @media (max-width: 768px) {
   .left-half {
-    height: 25vh; /* Further reduce height for mobile devices */
+    height: 30vh; /* Further reduce height for mobile devices */
   }
 
   .right-half {
@@ -207,7 +209,7 @@
 
 @media (max-width: 480px) {
   .left-half {
-    height: 20vh; /* Smallest height for very small screens */
+    height: 25vh; /* Smallest height for very small screens */
   }
 
   .right-half {
@@ -227,5 +229,13 @@
 
   .previous-score {
     font-size: 0.8rem; /* Smallest font size for very small screens */
+  }
+}
+
+/* Web Screen: Display 4 images at a time */
+@media (min-width: 1025px) {
+  .image-collage {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows (4 images total) */
   }
 }
